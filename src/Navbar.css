@@ -1,0 +1,18 @@
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav__logo{
+    position: fixed;
+    left: 20px;
+    width: 100px;
+    object-fit: contain;
+}
+.nav p{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}

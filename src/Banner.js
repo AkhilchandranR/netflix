@@ -1,37 +1,14 @@
-import axios from 'axios';
-import React,{ useEffect, useState } from 'react'
-import requests from './request';
+// import axios from 'axios';
+import React from 'react'
+// import requests from './request';
+import './Banner.css';
 
 function Banner() {
-    const [movie,setMovie] = useState([]);
-
-    useEffect(()=>{
-        async function fetchData(){
-            const request = await axios.get(requests.fetchTrending)
-            console.log("requestttt",request)
-        //     setMovie(request.data.results[
-        //         Math.floor(Math.random()*request.data.results.length-1)
-        //     ]);
-        //     return request;
-        // }
-        // fetchData();
-        }
-        fetchData();
-    },[]);
     return (
-        <header className="banner"
-        style={{
-                backgroundSize: "cover",
-                backgroundImage: `url(
-                    "https://image.tmdb.org/t/p/original/${movie?.backdrop_image}"
-                )`,
-                backgroundPosition: "center center",
-            }}
-        >
+        <header className="banner">
             <div className="banner__contents">
-                <h1>
-                    {movie?.title || movie?.name || movie.original_name }
-                </h1>
+                <h1>Netflix clone</h1>
+                <p>i just made this to learn react,its not a complete app</p>
             </div>
         </header>
     )
